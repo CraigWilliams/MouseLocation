@@ -4,16 +4,14 @@
 
 #define defs [NSUserDefaults standardUserDefaults]
 
-void WriteStringToPasteboard(NSString *string)
-{
+void WriteStringToPasteboard(NSString *string) {
 	NSPasteboard *pb = [NSPasteboard generalPasteboard];
 	[pb declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
 	[pb setString:string forType:NSStringPboardType];
 	[pb stringForType:NSStringPboardType];
 }
 
-void ShowHelp()
-{
+void ShowHelp() {
 	printf("Usage:\n");
 	printf("	MouseLocation [h|help|fp]\n"); 
 	printf("		-h or -help will display this help message\n");
