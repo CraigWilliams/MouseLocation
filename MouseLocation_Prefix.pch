@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MouseLocation' target in the 'MouseLocation' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
